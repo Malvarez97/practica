@@ -1,0 +1,166 @@
+body {
+    text-align: center;
+    /*Fuente*/
+    font-family:  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+#header {
+    height: 50px;
+    width: 100%;
+    border-bottom: 5px solid #ccc;
+    border-top: 5px solid #ccc;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(84,9,121,0.8130602582830007) 63%, rgba(0,212,255,1) 100%);
+}
+#logo {
+    width: 10%;
+    font-size: 10px;
+    float:left;
+    margin-top:auto;
+}
+#logo h2 {
+    font-size: 10px;
+    line-height: auto;
+    float: auto;
+    color:coral;
+}
+#logo img{ 
+    display:block;
+    float :left;
+    height: 50px;
+    animation:girar infinite 30s linear;
+}
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+.center{
+    width: 75%;
+    margin: 0px auto;
+}
+
+
+#menu{
+    width: 70%;
+    float:rigth;
+    font-size: 18px;
+    float:right;
+}
+#menu ul{
+    font-family: 'Gruenewald VA', sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    width: 60%;
+    float: rigth;
+}
+#menu ul li{
+    display: inline-block;
+    list-style: none;
+    height: 35px;   
+    margin-left: 15px;
+    margin-right: 15px; 
+}
+#menu a{
+    text-decoration: none;
+    color:black;
+    transition: 300 ms all ;
+}
+#menu a:hover{
+    color:cadetblue;
+    transition: 300ms all;
+
+}
+.clearfix{
+    clear:both;
+    float:none; 
+}
+#slider {
+    color:white;
+    background-color: purple;
+    width: 100%;
+    height: 180px;
+    /*line-height: 320px;*/
+    text-shadow:0px 0px 10px #444;
+    font-size: 14px;
+    float:center;
+
+}
+#slider h1 {
+    margin: 0px;
+    text-align: center;
+    padding: 25px ;
+}
+.boton-slider {
+    color:purple;
+    display:block;
+    background: grey;
+    padding: 10px;
+    width: 70px;
+    height: 30px;
+    margin: 0px auto;
+    font-size : 18px;
+    text-transform: uppercase;
+    text-shadow: none;
+    line-height: 30px;
+    box-shadow: 0px 0px 5px black;
+    transition:300ms all ;/* para el hover*/
+}
+.boton-slider:hover{
+    background-color: blue;
+    color:red;
+
+}
+.slidersmall{
+    height: 80px;
+}
+.slidersmall h1{
+    margin-top:40 px;
+    padding:0px;
+    padding-top: 30px;
+}
+#content{
+    width:70%;
+    float:left;
+    border: 3px solid blueviolet;
+    min-height: 400 px;
+    margin-right: 25px;
+    margin-top:10px;
+}
+#sidebar{
+    width:25%;
+    float:left;
+    border: 2px solid green ;
+    margin:10px;
+}
+
+.sidebar-item{
+    background:darkcyan;
+    padding:10px;
+    margin-top:30px;
+}
+.sidebar-item h3{
+    text-transform: uppercase;
+    font-size:25;
+    margin:0px;
+    border-bottom: 3px solid orange;
+
+}
+.sidebar-item .btn{
+    margin:0px auto;
+    margin-top: 10px;
+    
+
+}
+.btn{
+    display:block;
+    background:black;
+    color:palegreen;
+    text-transform: uppercase;
+    max-width: 118px;
+}

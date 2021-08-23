@@ -1,0 +1,11 @@
+h1{
+    /* margin-left: 100px;
+    margin-bottom: 80px;abajo  */
+    /* margin:80px;todos los lados */
+    margin:80px 100px; /*arriba abajo, izquierda derecha*/
+    background : #ec610a;
+}
+p{
+    background: azure;
+    padding: 80px;
+}

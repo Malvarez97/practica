@@ -1,0 +1,40 @@
+.enlace{
+    background: salmon;
+    color:slateblue; 
+    padding :10px 20px;
+    display: inline-block;
+    text-decoration: none;
+
+}
+.enlace:hover {
+    background: slateblue;
+    color:salmon; 
+}
+nav{
+    background:yellow;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.boton{
+    background:slateblue;
+    color:salmon;
+    padding: 10px 0;
+    border:2px solid black;
+    display: none;
+
+}
+/* media query para que se adapte a la pantalla  */
+@media (max-width: 600px) {
+    nav{
+        flex-direction: column}
+    .enlace{
+        margin: 10px 5px;
+    }
+    .boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display:none;
+    }
+}

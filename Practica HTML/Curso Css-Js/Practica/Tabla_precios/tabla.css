@@ -1,0 +1,49 @@
+.container{
+    margin: 0 auto;
+    width: 50%;
+}
+.precio{
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 35px;
+    color :red;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.columna{
+    background: rgb(228, 228, 228);
+    color:#333;
+    border: 1px solid red;
+    margin: 0 auto;/* arriba y abajo 0, costados auto*/
+    padding :10px;
+    border-radius: 10px;
+    width: 23%;
+    /* propiedad del valor del borde para que entre todo  */
+    box-sizing: border-box;
+    /* sombra del marge,se puede poner negativo, el 3er valor es el degradado  */
+    box-shadow: 10px 10px 5px rebeccapurple;
+    /* que sea flexible */
+
+}
+.center{
+    text-align: center;
+}
+.btn{
+    background: salmon;
+    display:block;
+    padding: 10px;
+    color: blue;
+    text-decoration:none;
+    border-radius: 3px;
+    margin-bottom: 10 px;
+}
+.btn:hover{
+    background: red;
+}
+@media (max-width: 750px){
+    .columna{
+        width: 45%;
+        margin-bottom: 10px;
+    }
+}

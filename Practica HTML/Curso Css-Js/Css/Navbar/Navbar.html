@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="Navbar.css">
+</head>
+<body>
+    <nav> 
+        <button class="boton" onclick="accion()"> Menu </button>
+        <!-- menu de navegacion -->
+        <a href="#" class="enlace "> Inicio</a>
+        <a href="#" class="enlace desaparece"> siguiente</a>
+        <a href="#" class="enlace desaparece"> Fin </a> 
+    </nav>
+    <script>
+        // aca van a ir las funciones de java script para el boton del menu
+        function accion(){
+            console.log('mi boton funciona');
+            var ancla = document.getElementsByClassName('enlace'); /* guardo en el ancla el nombre de la clase*/ 
+            for(var i=0; i<ancla.length;i++){
+                ancla[i].classList.toggle('desaparece');/* si no la tiene la coloca, si la tiene la borra */
+            }
+        }
+    </script>
+</body>
+</html>

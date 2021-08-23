@@ -1,0 +1,37 @@
+h1{
+    background:green;
+    display:inline-block;/*paso elemento de bloque a elemento de linea, puedo hacer un elementod de linea por ejemplo a, a elemento
+    de bloque con :block;  */
+} 
+.columna{
+    color: red;
+    background:blanchedalmond;
+    padding: 20 px;
+    width: 25%;
+    margin: 15px;
+}
+.boton{
+    background :violet;
+    margin : 15px;
+    
+}
+.padre {
+    display: flex;
+
+}
+button{
+    color: red;
+    background: blue;
+
+}
+button:hover{
+    background:red;
+    color:blue;
+}
+button:active{
+    background:blanchedalmond;
+}
+.clasesita{
+    background :chocolate;
+    display: inline-block;
+}
