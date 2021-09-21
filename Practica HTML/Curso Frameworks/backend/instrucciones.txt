@@ -1,0 +1,16 @@
+Depenedencias 
+-- Instalar express 
+npm install --save express
+-- instalar body-parser
+npm install --save body-parser (permite convertir un formulario en un JSON directamente)
+-- instalar moongose 
+npm install --save mongoose
+-- instalamos libreria para hacer uploads de archivos para subir ficheros de nodeJS 
+npm install --save connect-multiparty
+-- instalar validator para hacer validaciones directamente desde el backend 
+npm install -- save validator
+-- instlar nodemon para que cada vez que actualizo el archivo actualize todo 
+npm install --save-dev nodemon
+ "start": "nodemon index.js", cada vez que realizo start va a usar nodemon con index.js 
+
+

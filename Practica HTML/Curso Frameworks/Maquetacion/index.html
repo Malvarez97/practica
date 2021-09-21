@@ -21,16 +21,16 @@
                          <nav id="menu">
                              <ul>
                                  <li> 
-                                     <a href="#">Inicio </a>
+                                     <a href="blog.html">Inicio </a>
                                  </li>
                                  <li> 
-                                    <a href="#">Productos </a>
+                                    <a href="index.html">Productos </a>
                                  </li>
                                  <li> 
-                                    <a href="#">Nosotros </a>
+                                    <a href="article.html">Nosotros </a>
                                  </li>
                                  <li> 
-                                    <a href="#">Marcas </a>
+                                    <a href="formulario.html">Marcas </a>
                                  </li>
                              </ul> 
                              
@@ -45,10 +45,38 @@
     </div>
 
     <div class="center">
-        <section id="content">
-            <h2> Listado de articulos </h2>
-             <!--Listado Articulos-->
-        </section>
+            <section id="content">
+                <h2 id="subheader"> Listado de articulos </h2>
+
+                <script type ="text/javascript">
+                    window.addEventListener("load",function(event){
+                    var template = document.getElementById("template-articulo");
+                    var articles = document.getElementById("article");
+                    for(var i=0; i<5;i++){
+                        var clonado = template.cloneNode(true);
+                        clonado.removeAttribute("id");
+                        var h2 = clonado.getElementsByTagName("h2")[0];
+                        h2.innerHTML = h2.textContent + ' ' +i;
+                        articles.appendChild(clonado);
+                    }
+                });
+                </script>
+
+                <div id="article">
+                <article class ="article-item" id="template-articulo"> 
+                    <div class="image-wrap"> 
+                        <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/4792/production/_105322381_airbus_getty.jpg" alt="Avion"/>
+                    </div>
+                    <h2>Articulo de prueba</h2>
+                    <span class="date">
+                        hace 5 minutos 
+                    </span>
+                    <a href="#">leer mas </a>
+                    <div class="clearfix"> </div>
+                </article>
+            </section>
+        </div>
+
         <aside id="sidebar"> 
             <div class="nav-log" class="sidebar-item">
                 <h2>Aca creas articulos BRODERR</h2>
@@ -60,7 +88,7 @@
                 <p>Encuentra el producto que buscas</p>
                 <form> 
                     <input type="text" name="search"/>
-                    <input type="submit" name="submit" value="buscar"/>
+                    <input class="btn" type="submit" name="submit" value="buscar"/>
                 </form>
             </div>
         </aside>
